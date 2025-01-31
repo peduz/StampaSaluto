@@ -1,28 +1,30 @@
+
+
 public class Automobile {
     
-    public String colore;
+    private String colore;
 
-    public int numeroPorte;
+    private int numeroPorte;
 
-    public String motore;
+    private String motore;
 
-    public String marca;
+    private String marca;
 
-    public int cilindrata;
+    private int cilindrata;
 
-    public String alimentazione;
+    private String alimentazione;
 
-    public String categoria;
+    private String categoria;
 
-    public boolean cambioAutomatico;
+    private boolean cambioAutomatico;
 
-    public int numeroCavalli;
+    private int numeroCavalli;
 
-    public String modello;
+    private String modello;
 
-    public int numeroPosti;
+    private int numeroPosti;
 
-    public String targa;
+    private String targa;
 
     public Automobile() {
          System.out.println("Ciao");
@@ -32,22 +34,31 @@ public class Automobile {
     public Automobile(String marca) {
         this.marca = marca;
     }
-
+    
+    public Automobile(String targa, String marcaDaInizializzare) {
+        this(marcaDaInizializzare);
+        this.targa = targa;
+    }
+    
     public Automobile(int numeroCavalli) {
         this.numeroCavalli = numeroCavalli;
     }
 
-    public Automobile(String targa, String marcaDaInizializzare) {
-        this.targa = targa;
-        this.marca = marcaDaInizializzare;
-    }
-
     public Automobile(String targa, int numeroCavalli, int numeroPorte, String modello) {
+        this(numeroCavalli);
         //....
     }
 
     public void parti() {
-        System.out.println("Motore acceso");
+        System.out.println("Motore in accensione...");
+    }
+
+    public void parti(String tipoAccensione) {
+        if(tipoAccensione == null) {
+           parti();
+        } else {
+            System.out.println("Motore acceso con accensione " + tipoAccensione);
+        }
     }
 
     public void spegni() {
@@ -68,4 +79,35 @@ public class Automobile {
         return numeroCavalli;
     }
 
+    public String getModello() {
+        return modello;
+    }
+
+    public void setModello(String modello) {
+        this.modello = modello;
+    }
+
+    public String getTarga() {
+        return targa;
+    }
+
+    public void setTarga(String targa) {
+        this.targa = targa;
+    }
+
+    public int getNumeroCavalli() {
+        return numeroCavalli;
+    }
+
+    public void setNumeroCavalli(int numeroCavalli) {
+        this.numeroCavalli = numeroCavalli;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
 }
