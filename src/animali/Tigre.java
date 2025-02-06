@@ -10,6 +10,10 @@ public class Tigre extends Felino {
 
      private boolean albino;
 
+    public Tigre(double peso) {
+        super(peso);
+    }
+
     public String getProvenienza() {
         return provenienza;
     }

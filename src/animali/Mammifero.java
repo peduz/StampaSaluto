@@ -14,6 +14,14 @@ public class Mammifero {
     
     private double peso;
 
+    public Mammifero(double peso) {
+        this.peso = peso;
+    }
+
+    public void faiVerso() {
+        System.out.println("Verso animale");
+    }
+
     public int getNumeroDiZampe() {
         return numeroDiZampe;
     }
@@ -62,4 +70,10 @@ public class Mammifero {
         this.peso = peso;
     }
 
+    // @Override
+    // public String toString() {
+    //     return "numeroDiZampe=" + numeroDiZampe + ", coda=" + coda 
+    //             + ", marino=" + marino + ", colorePelo="
+    //             + colorePelo + ", carnivoro=" + carnivoro + ", peso=" + peso;
+    // }
 }

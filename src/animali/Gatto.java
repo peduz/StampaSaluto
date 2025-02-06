@@ -10,6 +10,17 @@ public class Gatto extends Felino {
 
     private int tendeDistrutte;
 
+    public Gatto(double peso) {
+        super(peso);
+    }
+
+    @Override
+    public void faiVerso() {
+        System.out.println("Miagola");
+        super.faiVerso();
+    }
+
+
     public String getRazza() {
         return razza;
     }

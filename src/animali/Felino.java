@@ -12,6 +12,10 @@ public class Felino extends Mammifero {
 
     private int lunghezzaBaffi;
 
+    public Felino(double peso) {
+        super(peso);
+    }
+
     public int getLunghezzaArtigli() {
         return lunghezzaArtigli;
     }

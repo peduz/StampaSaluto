@@ -12,6 +12,16 @@ public class Cane extends Canide {
 
     private boolean perdePelo;
 
+     public Cane(double peso, String razza) {
+         super(peso, razza);
+     }
+    
+    @Override
+    public void faiVerso() {
+        System.out.println("Abbia");
+    }
+
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -80,5 +90,10 @@ public class Cane extends Canide {
         this.nome = nome;
     }
 
-    
+    @Override
+    public String toString() {
+        return super.toString() + ", nome=" + nome + ", conChip=" + conChip 
+                + ", pedigree=" + pedigree + ", tipoPelo=" + tipoPelo
+                + ", perdePelo=" + perdePelo;
+    }
 }

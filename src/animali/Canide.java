@@ -12,6 +12,15 @@ public class Canide extends Mammifero {
 
     private String taglia;
 
+    // public Canide(double peso) {
+    //     super(peso);
+    // }
+
+    public Canide(double peso, String razza) {
+        super(peso);
+        this.razza = razza;
+    }
+
     public boolean isDomestico() {
         return domestico;
     }
@@ -50,6 +59,14 @@ public class Canide extends Mammifero {
 
     public void setTaglia(String taglia) {
         this.taglia = taglia;
+    }
+
+    @Override
+    public String toString() {
+        return  super.toString() 
+                + ", domestico=" + domestico + ", razza=" + razza 
+                + ", daRiporto=" + daRiporto 
+                + ", daCaccia=" + daCaccia + ", taglia=" + taglia;
     }
 
 
