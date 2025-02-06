@@ -12,5 +12,9 @@ public class UsaRettangolo {
          System.out.println("L'area con base " + mioRettangolo.getBase()
           + " e altezza " + mioRettangolo.getAltezza() + 
           " è: " + mioRettangolo.calcolaArea());
+
+          Rettangolo[] vari = {mioRettangolo};
+
+          System.out.println("Area rettangolo: " + vari[0].calcolaArea());
     }
 }

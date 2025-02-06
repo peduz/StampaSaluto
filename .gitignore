@@ -1,3 +1,4 @@
 .vscode/settings.json
 bin/**.class
 bin/uno/due/Prova.class
+bin/**/*.class
