@@ -1,6 +1,6 @@
 package animali;
 
-public class Mammifero {
+public abstract class Mammifero {
     
     private int numeroDiZampe;
 
@@ -18,9 +18,7 @@ public class Mammifero {
         this.peso = peso;
     }
 
-    public void faiVerso() {
-        System.out.println("Verso animale");
-    }
+    public abstract void faiVerso();
 
     public int getNumeroDiZampe() {
         return numeroDiZampe;

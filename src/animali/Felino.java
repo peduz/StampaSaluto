@@ -1,6 +1,6 @@
 package animali;
 
-public class Felino extends Mammifero {
+public abstract class Felino extends Mammifero {
 
     private int lunghezzaArtigli;
 

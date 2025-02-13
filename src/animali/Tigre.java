@@ -14,6 +14,11 @@ public class Tigre extends Felino {
         super(peso);
     }
 
+    @Override
+    public void faiVerso() {
+        // System.out.println("Ruggisce");
+    }
+
     public String getProvenienza() {
         return provenienza;
     }

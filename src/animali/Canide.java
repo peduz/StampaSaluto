@@ -1,6 +1,6 @@
 package animali;
 
-public class Canide extends Mammifero {
+public abstract class Canide extends Mammifero {
     
     private boolean domestico;
 

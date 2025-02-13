@@ -17,7 +17,6 @@ public class Gatto extends Felino {
     @Override
     public void faiVerso() {
         System.out.println("Miagola");
-        super.faiVerso();
     }
 
 

@@ -2,7 +2,7 @@ package staticAuto;
 
 import java.util.Random;
 
-public class Auto {
+public abstract class Auto implements Mobile, Stoppable {
 
     /*
      * Contatore di Auto
