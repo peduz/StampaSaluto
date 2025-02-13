@@ -1,8 +1,19 @@
 
-public class UsaAutomobile {
-    
+import staticAuto.Auto;
 
+
+public class UsaAutomobile extends Auto {
+
+    public UsaAutomobile() {
+        super(null);
+        Auto auto1 = new Auto("modello");
+        // auto1.nome = "pippo"; NO
+        nome = "Pippo"; // Attributo del padre
+    }
+
+    
     public static void main(String[] args) {
+
         Automobile porsche = new Automobile("Porsche");
         porsche.setNumeroPorte(5);
         porsche.setModello("GT3");
