@@ -46,5 +46,6 @@ public class UsaAnimali {
         System.out.println(fuffi);
         
         System.out.println(diego);
+        
     }
 }

@@ -1,16 +1,7 @@
 
-import staticAuto.Auto;
 
 
-public class UsaAutomobile extends Auto {
-
-    public UsaAutomobile() {
-        super(null);
-        Auto auto1 = new Auto("modello");
-        // auto1.nome = "pippo"; NO
-        nome = "Pippo"; // Attributo del padre
-    }
-
+public class UsaAutomobile {
     
     public static void main(String[] args) {
 
