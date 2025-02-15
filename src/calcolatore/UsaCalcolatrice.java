@@ -1,28 +1,33 @@
 package calcolatore;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class UsaCalcolatrice {
   
-    public void stampaSaluto(String nome) {
-        System.out.println("Ciao " + nome);
-    }
+ 
 
     public static void main(String[] args) {
         // int somma = Calcolatrice.somma(2, 4);
         // System.out.println(somma);
 
-        saluta();
+        double divisione = Calcolatrice.divisione(23.24, 12.451);
 
-        UsaCalcolatrice uc = new UsaCalcolatrice();
-        uc.stampaSaluto("Giuseppe");
+        System.out.println(divisione);
 
-        Calcolatrice c = new Calcolatrice();
-        int somma = c.somma(2, 4);
+        BigDecimal a = new BigDecimal(23.24);
+        BigDecimal b = new BigDecimal(12.451);
+        a = a.setScale(40, RoundingMode.HALF_UP);
+        b = b.setScale(40, RoundingMode.HALF_UP);
 
-        long prodotto = Calcolatrice.prodotto(10, 234324);
-        System.out.println(prodotto);
+        
+        BigDecimal divisione2 = Calcolatrice.divisioneBigDecimal(a, b);
+
+        BigDecimal somma = a.add(b);
+        BigDecimal differenza = a.subtract(b);
+        BigDecimal prodotto = a.multiply(b);
+        System.out.println(divisione2.toPlainString());
+        
     }
 
-    public static void saluta() {
-        System.out.println("Ciao");
-    }   
 }

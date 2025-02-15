@@ -1,5 +1,8 @@
 package calcolatore;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Calcolatrice {
 
     public static final double PI = 3.14;
@@ -31,6 +34,14 @@ public class Calcolatrice {
 
     public static double divisione(int a, int b) {
         return (double) a/b;
+    }
+
+    public static double divisione(double a, double b) {
+        return a/b;
+    }
+
+    public static BigDecimal divisioneBigDecimal(BigDecimal a, BigDecimal b) {
+        return a.divide(b, RoundingMode.HALF_UP);
     }
 
     public static double potenza(int base, int esponente) {
