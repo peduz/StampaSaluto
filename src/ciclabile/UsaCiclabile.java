@@ -23,5 +23,15 @@ public class UsaCiclabile {
         ciclo1.getElementoSuccessivo();
         ciclo1.getElementoSuccessivo();
         
+
+        Ciclabile ciclo2 = new Ciclabile();
+        ciclo2.addElemento(1);
+        System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(2);
+        System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(3);
+        System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(4);
+        System.out.println(ciclo2.getElementoSuccessivo());
     }
 }
