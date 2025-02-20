@@ -33,5 +33,23 @@ public class UsaCiclabile {
         System.out.println(ciclo2.getElementoSuccessivo());
         ciclo2.addElemento(4);
         System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(1);
+        System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(1);
+        System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(1);
+        System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(1);
+        System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(1);
+        System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(1);
+        System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(1);
+        System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(1);
+        System.out.println(ciclo2.getElementoSuccessivo());
+        ciclo2.addElemento(1);
+        System.out.println(ciclo2.getElementoSuccessivo());
     }
 }

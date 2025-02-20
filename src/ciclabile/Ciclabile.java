@@ -61,7 +61,7 @@ public class Ciclabile {
             temp[i] = elenco[i];
           }
 
-          this.elenco = new int[10];
+          this.elenco = new int[temp.length*2];
           System.out.println("Riferimento elenco: " + this.elenco);
 
           for(int i = 0; i < temp.length; i++) {
@@ -71,6 +71,9 @@ public class Ciclabile {
            
           System.out.println("Riferimento elenco: " + this.elenco);
           
+          
+          this.elenco[indiceScrittura] = elemento;
+          indiceScrittura++;
         }
     }
 
