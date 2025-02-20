@@ -1,5 +1,7 @@
 package ciclabile;
 
+import jdk.jshell.spi.ExecutionControl.UserException;
+
 public class Ciclabile {
     /*
      * Vogliamo realizzare una classe che contenga un elenco di interi e che ci 
@@ -77,21 +79,22 @@ public class Ciclabile {
         }
     }
 
-     int getElementoSuccessivo() {
+     int getElementoSuccessivo() throws IllegalAccessException, UserException {
         if(hasAncoraElementi()) {
             int valore = elenco[indice];
             indice++;
             return valore;
         } else {
-            return -1;
+            throw new IllegalAccessException("L'elenco è stato visualizzato tutto,"
+                    + " non si può leggere ulteriormente");
         }
      }
 
-     boolean hasAncoraElementi() {
+     boolean hasAncoraElementi() throws UserException {
         if(indice < elenco.length) {
             return true;
         } else {
-            return false;
+            throw new UserException("Non ci sono più elementi", null, null);
         }
      }
 
