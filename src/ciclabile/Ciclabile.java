@@ -22,7 +22,7 @@ public class Ciclabile {
         addElemento che permetta di aggiungere un nuovo intero all’elenco da ciclare.
      */
 
-     private final int[] elenco;
+     private int[] elenco;
 
      private int indice;
 
@@ -33,7 +33,7 @@ public class Ciclabile {
      }
 
     public Ciclabile() {
-        this.elenco = new int[10];
+        this.elenco = new int[1];
     }
 
     void addElemento(int elemento) {
@@ -41,7 +41,36 @@ public class Ciclabile {
             this.elenco[indiceScrittura] = elemento;
             indiceScrittura++;
         } else {
-            System.out.println("Elenco completo");
+            /* 
+           System.out.println("Elenco: " + this.elenco);
+           int [] temp = this.elenco;
+           System.out.println("Temp: " + temp);
+           this.elenco = new int[10];
+           System.out.println("Elenco: " + this.elenco);
+           this.elenco = temp;
+           System.out.println("Temp: " + temp);
+           System.out.println("Elenco: " + this.elenco);
+            NON funziona perché sto assegnando lo stesso indirizzo di memoria,
+                non sto riversando il contenuto
+           */
+          System.out.println("Riferimento elenco: " + this.elenco);
+          int [] temp = new int[this.elenco.length];
+
+          System.out.println("Riferimento temp: " + temp);
+          for(int i = 0; i < temp.length; i++) {
+            temp[i] = elenco[i];
+          }
+
+          this.elenco = new int[10];
+          System.out.println("Riferimento elenco: " + this.elenco);
+
+          for(int i = 0; i < temp.length; i++) {
+            elenco[i] = temp[i];
+          }
+          System.out.println("Riferimento temp: " + temp);
+           
+          System.out.println("Riferimento elenco: " + this.elenco);
+          
         }
     }
 
